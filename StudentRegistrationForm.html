@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <style>
+ body{
+ background:#f0f2f5;
+ padding:40px;
+ }
+ .container{
+ max-width:600px;
+ margin:auto;
+ background:#fff;
+ padding:30px;
+ border-radius:10px;
+ box-shadow:0 10px 10px;
+ }
+ h2{
+ 
+ text-align:center;
+ color:#2c3e50;
+ margin-bottom:30px;
+ }
+ label{
+ display:block;
+ margin-bottom:8px;
+ font-weight:bold;
+ color:#333;
+ }
+ input,select{
+ width:100%;
+ padding:10px;
+ margin-bottom:20px;
+ font-size:16px;
+ border:1px solid #ccc;
+ border-radius:5px;
+ }
+ input[type="submit"]{
+ background-color:#27ae60;
+ color:white;
+ cursor:pointer;
+ border:none;
+ font-weight:bold;
+ }
+ input[type="submit"]:hover{
+ background-color:#1e8449;
+ }
+ .footer{
+ text-align:center;
+ font-size:18px;
+ color:#999;
+ margin-top:20px;
+ }
+ </style>
+ </head>
+ <body>
+ <div class="container">
+ <h2>Student Registration Form</h2>
+ <form action="/student" method="post">
+ <label>Full Name</label>
+ <input type="text" placeholder="Your Full Name" required>
+ <label>Email</label>
+ <input type="text" placeholder="you@example.com">
+ <label>Date of Birth</label>
+ <input type="date" placeholder="Date of Birth">
+ <label>Gender</label>
+ <select>
+ <option>Male</option>
+ <option>Female</option>
+ </select>
+ <label>Mobile Number</label>
+ <input type="text" placeholder="10-digit Number">
+ <label>Course</label>
+ <input type="text" placeholder="E.g. B.sc,B.Tech, MCA">
+ <input type="submit" value="Register">
+ </form>
+ <div class="footer">
+ &copy; 2025 Student Portal. All Rights Reserved
+ </div>
+ </div>
+ </body>
+ </html>
